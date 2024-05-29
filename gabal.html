@@ -1,0 +1,1109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">  
+    <link rel="stylesheet" href="style.css">  
+    <title> لمسات الفخار  </title>
+</head>
+<body>
+    <style>
+        header {
+            position: fixed;
+            top: 10px;
+            width: 98%;
+            z-index: 50;
+        }
+        /* تنسيق القائمة الرئيسية */
+        .navigation ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #433946;
+            border-radius: 10px;
+        }
+
+        .navigation li {
+            float: right;
+        }
+
+        .navigation li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 20px;
+            text-decoration: none;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .navigation li a:hover {
+            background-color: #080000;
+            border-radius: 50%;
+        }
+
+        hr {
+            margin-top: 100px;
+            border: 1px solid #433946;
+            border-radius: 10px;
+        }
+        
+        /* تنسيق القسم الرئيسي */
+        .main {
+            padding: 200px;
+            text-align: left;
+            background-size: cover;
+            background-image: url("audio/77.jpg");
+            color: #ffffff;
+
+        }
+        
+        .main h2, .main h3 {
+            color: #410a6e;
+            font-size: 1.80em;
+            text-align: left;
+            margin-left: 20px;
+        }
+        
+        .main-btn {
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .main-btn:hover {
+            background-color: #0056b3;
+        }
+        
+        .title {
+            display: flex;
+            justify-content: center;
+            color: #55489a;
+            font-size: 4.2em;
+            font-weight: 800;
+            margin-bottom: 20px;
+            text-align: left;
+            margin-left: 20px;
+        }
+        /* تنسيق الشركات */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.elements {
+    background-color: #007BFF;
+    width: 21.25em;
+    box-shadow:0 5px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    text-align: center;
+    transition: scale 1.2s ease;
+}
+
+.elements:hover {
+    transform: scale(1.05);
+}
+
+.info h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.info p {
+    color: #1b0c0c;
+    font-size: 1.1em;
+}
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .contact {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .contact h2 {
+            color: #55489a;
+            margin-bottom: 20px;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact label {
+            color: #55489a;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .contact input, .contact textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #55489a;
+        }
+        .contact button {
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #0056b3;
+        }
+        .help {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .help h2 {
+            color: #55489a;
+            margin-bottom: 20px;
+        }
+        .help p {
+            color: #1b0c0c;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .help a {
+            color: #007BFF;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .help a:hover {
+            color: #0056b3;
+        }
+        .team-work {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .team-work h2 {
+            color: #55489a;
+            margin-bottom: 80p;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .people {
+            background-color: #fdfeff;
+            width: 21.25em;
+            box-shadow: 0 5px 25px rgba(100, 61, 61, 0.2);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px;
+            text-align: center;
+            transition: scale 1.2s ease;
+        }
+        .people:hover {
+            transform: scale(1.05);
+        }
+        .information h3 {
+            color: #b22af0;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .information img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .information p {
+            color: #1b0c0c;
+            font-size: 1.1em;
+        }
+        .team-work {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .team-work h2 {
+            color: #55489a;
+            margin-bottom: 20px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .company {
+            background-color: #054eb4;
+            width: 21.25em;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px;
+            text-align: center;
+            transition: scale 1.2s ease;
+        }
+        .company:hover {
+            transform: scale(1.05);
+        }
+        .company h3 {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .product {
+            background-color: #fdfeff;
+            width: 21.25em;
+            box-shadow: 0 5px 25px rgba(100, 61, 61, 0.2);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+            transition: scale 1.2s ease;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .product p {
+            color: #1b0c0c;
+            font-size: 1.1em;
+        }
+        .product a {
+            color: #007BFF;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .product a:hover {
+            color: #0056b3;
+        }
+        .reservation-Payment {
+            padding: 50px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        .reservation-Payment h2 {
+            color: #55489a;
+            margin-bottom: 20px;
+        }
+        .reservation-Payment p {
+            color: #1b0c0c;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .reservation-Payment a {
+            color: #007BFF;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        .reservation-Payment a:hover {
+            color: #0056b3;
+        }
+        .reservation-Payment form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .reservation-Payment label {
+            color: #55489a;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .reservation-Payment input, .reservation-Payment textarea {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #55489a;
+        }
+        .reservation-Payment button {
+            color: #fff;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .reservation-Payment button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            background-color: #333;
+            color: #7a5151;
+            text-align: center;
+            padding: 2px 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        
+    </style>
+    <header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="gabal.html">الرئيسية</a></li>
+                <li><a href="#companies">الشركات</a></li>
+                <li><a href="#products"> المنتجات</a></li>
+                <li><a href="#team-work">فريق العمل </a></li>
+                <li><a href="#contact">التواصل</a></li>
+                <li><a href="#help">المساعدة</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>    
+    <hr>   
+    <br>
+    <br>
+    <br>
+     <section class="main">
+        <div>
+            <h2>Welcome to our Ceramic gallery</h2>
+            <br>
+          <h3> نحن نقدم لكم أفضل الخدمات في عالم الفخار والسيراميك </h3>
+          <h3> </h3>
+        <br>
+         <a href="#companies" class="main-btn">الشركات</a>
+        </div>
+    </section>
+    <br>
+    <hr>
+    <section class="الشركات" id="companies">
+          <h2 class="title">companies</h2>
+          <div class="content">
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا كليوباترا</a></h3>
+                    <div class="img">
+                        <img src="شعار/i0feuti7147.jpg" alt="company">
+                    </div>
+                    <p>سيراميكا كليوباترا هي شركة مصرية رائدة في إنتاج بلاط السيراميك والبورسلين للأرضيات والحوائط
+                        بالإضافة إلى أطقم الأدوات الصحية وأطقم الحماماتتتميز بتصدير منتجاتها إلى أكثر من 100 دولة حول العالم،
+                        وتقدم تشكيلات متنوعة تلبي احتياجات مختلف المشروعات</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا مايوركا</a></h3>
+                    <div class="img">
+                        <img src="شعار/2.png" alt="company">
+                    </div>
+                    <p>سيراميكا مايوركا تعد جزءًا من المجموعة المصرية الإسبانية
+                         تشتهر بتقديم منتجات عالية الجودة من السيراميك والبورسلين للأرضيات والحوائط، وتتميز بتصاميمها الراقية
+                          التي تجمع بين الأناقة والمتانة، مما جعلها تحظى بسمعة طيبة في السوق المصري والشرق الأوسط</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا رويال</a></h3>
+                    <div class="img">
+                        <img src="شعار/R.3" alt="company">
+                    </div>
+                    <p>سيراميكا رويال هي شركة مصرية تتمتع بأكثر من ثلاثين عامًا من الخبرة في مجال السيراميك، وتهدف إلى تحقيق 
+                        “مملكة من الجمال” من خلال مزج الخيال مع الخبرة في منتجاتها تشتهر بجودتها العالية، الإبداع
+                        ، والجمال في تصاميمها، مما يجعلها واحدة من الشركات الرائدة في صناعة السيراميك في مصر.</p>
+            </div>
+        </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا روندي</a></h3>
+                    <div class="img">
+                        <img src="شعار/4.jpg" alt="company">
+                    </div>
+                    <p>سيراميكا روندي هي علامة تجارية مصرية متخصصة في صناعة السيراميك والرخام 
+                        والبورسلين، وتشتهر بمنتجاتها ذات العروق والظلال المستوحاة من الرخام الطبيعي
+                         تعكس منتجاتها الأناقة والهيبة، وتقدم أسطحًا ثمينة تجمع بين الجودة والتصاميم العصرية المزينة بالأصالة.</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا جلوريا</a></h3>
+                    <div class="img">
+                        <img src="شعار/OIP.5" alt="company">
+                    </div>
+                <p>سيراميك جلوريا هي شركة مصرية تأسست في عام 2009 وتعتبر من الشركات الرائدة في صناعة السيراميك في المنطقة العربية
+                     والعالم تشتهر بتصاميمها الفاخرة وجودة منتجاتها العالية، وتقدم مجموعة متنوعة من البلاط والبورسلين بأشكال 
+                     وأحجام مختلفة، وتحرص على إضافة الرقي والجمال لكل قطعة، مما يجعل منتجاتها تحف فنية فريدة.
+                </p>
+            </div>
+        </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا بيراميدز</a></h3>
+                    <div class="img">
+                        <img src="شعار/6.jpg" alt="company">
+                    </div>
+                    <p>سيراميكا بيراميدز هي شركة مصرية تتميز بتقديم منتجات سيراميكية تجمع بين الجمال والأناقة،
+                         وتشتهر بتصاميمها العصرية التي تتناسب مع مختلف الأذواق تحرص الشركة على تقديم حلول مبتكرة للمطابخ والحمامات،
+                         مع الاهتمام بالتوافق بين سيراميك الجدران والأرضيات والألوان والأثاث لخلق تصميم يعكس الراحة والسعادة</p>
+                </div>
+            </div>
+            <div class="elements">
+                <div class="info">
+                    <h3><a href="#products">سيراميكا الجوهرة </a></h3>
+                    <div class="img">
+                        <img src="شعار/7.png" alt="company">
+                    </div>
+                    <p>سيراميكا الجوهرة، المعروفة أيضًا باسم GEMMA، هي شركة مصرية تأسست في عام 1989 وتعد من الشركات الرائدة في صناعة السيراميك والبورسلين،
+                         تشتهر بتقديم مجموعات متنوعة من البلاط والبورسلين بتصاميم مبتكرة وألوان وملمس يلبي احتياجات العملاء، 
+                         وتوفر أيضًا أدوات تصميم عبر الإنترنت لتخصيص الإعدادات والاستفادة القصوى من تصاميم GEMMA1. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <br>
+    <section class="المنتجات" id="products"> 
+        <div class="products">
+            <div class="company">
+                <h3>سيراميكا كليوباترا</h3>
+                <div class="product">
+                    <img src="protects/protecr1/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا مايوركا</h3>
+                <div class="product">
+                    <img src="protects/protecr2/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr2/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا رويال</h3>
+                <div class="product">
+                    <img src="protects/protecr3/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr3/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr1/1 (11).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا روندي</h3>
+                <div class="product">
+                    <img src="protects/protecr4/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr4/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا جلوريا</h3>
+                <div class="product">
+                    <img src="protects/protecr5/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr5/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا بيراميدز</h3>
+                <div class="product">
+                    <img src="protects/protecr6/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr6/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+            <div class="company">
+                <h3>سيراميكا الجوهرة </h3>
+                <div class="product">
+                    <img src="protects/protecr7/1 (1).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:30×30 سم </p>
+                    <p>السعر: $100</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (2).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 20×20 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (3).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:40×40 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (4).jpg" width="400" height="300" alt="product">
+                    <p> المقاس:50×50 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (5).jpg" width="400" height="300" alt="product">
+                    <p>المقاس : 60×60 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (6).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×120 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (7).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×150 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (8).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:120×240 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (9).jpg" width="400" height="300" alt="product">
+                    <p>المقاس :120×260 سم </p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+                <div class="product">
+                    <img src="protects/protecr7/1 (10).jpg" width="400" height="300" alt="product">
+                    <p>المقاس:150×300 سم</p>
+                    <p>السعر: $150</p>
+                    <a href="#reservation-Payment Method">حجز</a>
+                    <a href="#reservation-Payment Method">شراء</a>
+                </div>
+            </div>
+
+    </section>
+    <hr>
+    <section class="reservation-Payment Method" id="reservation-Payment Method">
+        <h2>الحجز وطرق الدفع</h2>
+        <div class="reservation">
+            <form action="reservation.php" method="post">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="address">العنوان:</label>
+                <input type="text" id="address" name="address" required>
+                <label for="product">المنتج:</label>
+                <select id="product" name="product" required>
+                    <option value="product1">سيراميكا كليوباترا </option>
+                    <option value="product2">سيراميكا مايوركا </option>
+                    <option value="product3">سيراميكا رويال </option>
+                    <option value="product4"> سيراميكا روندي</option>
+                    <option value="product5">سيراميكا جلوريا </option>
+                    <option value="product6">سيراميكا بيراميدز </option>
+                    <option value="product7"> سيراميكا الجوهرة</option>
+                </select>
+                <label for="quantity">الكمية:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button type="submit">حجز</button>
+            </form>
+        </div class"Payment-Method">
+            <h3>طرق الدفع</h3>
+            <p>يمكنك الدفع عند الاستلام أو عن طريق  التحويل على فودافون كاش على الرقم التالي </p>
+            <p>01061987676</p>
+    </section>
+    <hr>
+      <br>
+      <br>
+      <br>
+     
+    <section class="team-work" id="team-work">
+        <h2>فريق العمل</h2>
+        <div class="team">
+            <div class="people">
+                <div class="information">
+                    <h3>أحمد الإدريسي</h3>
+                    <div class="image">
+                        <img src="team-work/gabal.jpg" alt="team">
+                    </div>
+                    <hr>
+                    <p>أحمد الإدريسي هو مدير الشركة والمؤسس الرئيسي للشركة، وهو مهندس معماري متخصص في تصميم الديكورات الداخلية والخارجية،
+                         وقد قام بتأسيس الشركة في عام 2000 وقادها إلى النجاح والتميز في مجال السيراميك والبورسلين.</p>
+                </div>
+            </div>
+            <div class="people">
+                <div class="information">
+                    <h3>أمير محمد</h3>
+                    <div class="image">
+                        <img src="team-work/amir.jpg" alt="team">
+                    </div>
+                    <hr>
+                    <p>أمير محمد هو مدير التسويق والعلاقات العامة في الشركة، وهو مسؤول عن تسويق المنتجات والترويج لها،
+                         وقد ساهم بشكل كبير في تحقيق النجاح والتميز للشركة في السوق المصري والعالمي.</p>
+                </div>
+            </div>
+            <div class="people">
+                <div class="information">
+                    <h3> أسامة أنور</h3>
+                    <div class="image">
+                        <img src="team-work/osama.jpg" alt="team">
+                    </div>
+                    <hr>
+                    <p>أسامة أنور هو مدير المبيعات في الشركة، وهو مسؤول عن تحقيق الأهداف المالية وزيادة حصة الشركة في السوق،
+                         وقد قاد الشركة إلى تحقيق نمو مستدام وزيادة الأرباح من خلال استراتيجيات المبيعات الفعالة.</p>
+                </div>
+            </div>
+            <div class="people">
+                <div class="information">
+                    <h3>أحمد ماهر</h3>
+                    <div class="image">
+                        <img src="team-work/maher.jpg" alt="team">
+                    </div>
+                    <hr>
+                    <p>أحمد ماهر هو مدير الموارد البشرية في الشركة، وهو مسؤولة عن توظيف الموظفين وتدريبهم وتطوير مهاراتهم،
+                         وقد ساهم بشكل كبير في تحقيق النجاح والتميز للشركة من خلال تطبيق أفضل الممارسات في إدارة الموارد البشرية.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+            </section>
+            <hr>
+    <section class="contact" id="contact">
+        <h2>تواصل معنا</h2>
+        <form action="contact.php" method="post">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    <hr>
+    <section class="help" id="help">
+        <h2>المساعدة</h2>
+        <p>إذا كان لديك أي استفسار أو مشكلة، يمكنك التواصل معنا عبر البريد الإلكتروني:</p>
+        <a href="mailto:am128133133@gmail.com">am128133133@gmail.com</a> 
+    </section>
+    <footer>
+        <div class="container">
+            <p>جميع الحقوق محفوظة &copy; 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
